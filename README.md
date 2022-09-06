@@ -1,4 +1,4 @@
-![](images/CentSenseBanner.png)
+![](public/assets/images/CentSenseBanner.png)
 
 Since every penny counts, we help you keep track of them.  
 
@@ -8,7 +8,7 @@ This is where we're going to explain the app.
 
 ---
 ## Built with
-NodeJS, ExpressJS, MongoDB, Mongoose, Passport, BCrypt
+NodeJS, ExpressJS, MongoDB, Mongoose, Passport, BCrypt, EnsureAuth
 
 ### Built by Team #173 aka Beans
 - [Bomboloni](https://github.com/bomboloni)
