@@ -16,6 +16,6 @@ NodeJS, ExpressJS, MongoDB, Mongoose, Passport, BCrypt
 - [Marco](https://github.com/marco-aguirre)
 - [Matt](https://github.com/matt-conn)
 - [Ryan](https://github.com/RyanKHawkins)
-- [Nate]()
+- [Nate](https://github.com/nwsmith90)
 ---
 Thank you for *counting* on us.
