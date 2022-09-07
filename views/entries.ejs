@@ -45,7 +45,7 @@
 
 							<!-- Content -->
 								<article>
-                                    <h1>Bean Tracker</h1>
+                                    <h1>Budget for <%= user.userName %></h1>
                                     <h2>Income</h2>
                                     
                                     <table class="entry-table">
@@ -68,9 +68,18 @@
                                                     <td><%= el.amount %></td>
                                                     <td ><span class="del">delete</span></td>
                                                 </tr>
+	
                                             <% }) %>
                                         </tbody>
                                     </table>
+
+                                    <!-- total income -->
+									<% let incTotal = 0 %>
+									<% income.forEach(el => { %>
+										<%incTotal += +el.amount%>
+
+									<%})%>
+									<%console.log(incTotal)%>
 									<h2>Expenses</h2>
 
 									<!-- <ul>
@@ -110,10 +119,15 @@
                                             <% }) %>
                                         </tbody>
                                     </table>
+									<!-- Total Expenses -->
+									<% let expTotal = 0 %>
+									<% expenses.forEach(el => { %>
+										<%expTotal += +el.amount%>
 
-                                    
+									<%})%>
+									<%console.log(expTotal)%>
 									
-										<h3><%= user.userName %> has <%= total %> entries.</h3>
+										<h3>There is $<%= (incTotal-expTotal).toFixed(2) %> left to spend.</h3>
 									
 										<form action="/entries/createEntry" method='POST'>
 											<input type="date" name="date">
