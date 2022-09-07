@@ -72,7 +72,7 @@
                                             <% }) %>
                                         </tbody>
                                     </table>
-
+									
                                     <!-- total income -->
 									<% let incTotal = 0 %>
 									<% income.forEach(el => { %>
@@ -80,6 +80,8 @@
 
 									<%})%>
 									<%console.log(incTotal)%>
+
+									<p> Total income: <%=incTotal%> </p>
 									<h2>Expenses</h2>
 
 									<!-- <ul>
@@ -126,7 +128,7 @@
 
 									<%})%>
 									<%console.log(expTotal)%>
-									
+									<p>Total expenses: <%= expTotal%></p>
 										<h3>There is $<%= (incTotal-expTotal).toFixed(2) %> left to spend.</h3>
 									
 										<form action="/entries/createEntry" method='POST'>
