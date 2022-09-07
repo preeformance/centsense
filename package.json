@@ -4,7 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+<<<<<<< HEAD
     "npm start": "nodemon server.js",
+=======
+    "start": "nodemon server.js",
+>>>>>>> 66e8fe1 (switched back to nodemon)
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
