@@ -61,7 +61,7 @@
                                         <tbody>
                                             <% income.forEach( el => { %>
                                                 <tr class="incomeItem" data-id='<%=el._id%>'>
-                                                    <td><%= el.date %></td>
+                                                    <td><%= el.date.toLocaleDateString() %></td>
                                                     <td><%= el.description %></td>
                                                     <td><%= el.company %></td>
                                                     <td><%= el.category %></td>
@@ -109,7 +109,7 @@
                                         <tbody>
                                             <% expenses.forEach( el => { %>
                                                 <tr class="expenseItem" data-id='<%=el._id%>'>
-                                                    <td><%= el.date %></td>
+                                                    <td><%= el.date.toLocaleDateString() %></td>
                                                     <td><%= el.description %></td>
                                                     <td><%= el.company %></td>
                                                     <td><%= el.category %></td>
