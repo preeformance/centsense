@@ -3,8 +3,7 @@
 Since every penny counts, we help you keep track of them.  
 
 ## Expense Tracker
-This is where we're going to explain the app.
-
+Cent Sense is a free fullstack app that allows users to keep track of their income, expenses, and their overall balance.
 
 ---
 ## Built with
