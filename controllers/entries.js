@@ -8,10 +8,14 @@ module.exports = {
         console.log(req.user)
         try{
             // Get individual entry item
+            const expenseItems = await Entry.find({userId:req.user.id, expense:true})
+            const incomeItems = await Entry.find({userId:req.user.id, expense:false})
             const entryItems = await Entry.find({userId:req.user.id})
+            // const expenseItems = await entryItems.find({expense: true})
+            // const incomeItems = await entryItems.find({expense: false})
             const totalEntries = await Entry.countDocuments({userId:req.user.id,})
 
-            res.render('entries.ejs', {entries: entryItems, total: totalEntries, user: req.user})
+            res.render('entries.ejs', {entries: entryItems, expenses: expenseItems, income: incomeItems, total: totalEntries, user: req.user})
         }catch(err){
             console.log(err)
         }
@@ -49,6 +53,8 @@ module.exports = {
     },
     
     deleteEntry: async (req, res)=>{
+        console.log("checkpoint-m")
+        console.log(req.body)
         console.log(req.body.entryIdFromJSFile)
         try{
             await Entry.findOneAndDelete({_id:req.body.entryIdFromJSFile})

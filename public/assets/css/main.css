@@ -1494,6 +1494,7 @@ input, select, textarea {
 		color: #444;
 	}
 
+
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
@@ -1519,6 +1520,11 @@ input, select, textarea {
 	form input[type="password"] {
 		line-height: 3em;
 		padding: 0 1em;
+	}
+
+	#exp, #inc{
+		-webkit-appearance: radio;
+
 	}
 
 	form select {
