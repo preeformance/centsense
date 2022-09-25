@@ -9,7 +9,7 @@ Cent Sense is a free fullstack app that allows users to keep track of their inco
 ## Built with
 NodeJS, ExpressJS, MongoDB, Mongoose, Passport, BCrypt, EnsureAuth
 
-### Built by Team #173 aka Beans
+### Built by
 - [Bomboloni](https://github.com/bomboloni)
 - [Pree](https://github.com/preeformance)
 - [Marco](https://github.com/marco-aguirre)
@@ -17,4 +17,10 @@ NodeJS, ExpressJS, MongoDB, Mongoose, Passport, BCrypt, EnsureAuth
 - [Ryan](https://github.com/RyanKHawkins)
 - [Nate](https://github.com/nwsmith90)
 ---
-Thank you for *counting* on us.
+## Optimizations
+
+Updated budget page to help users see their balance. Next steps are to add the graphs to show a pi chart that breaks down the categories of the user's spending.
+
+## Lessons Learned:
+
+I learned how the front end works together for styling and event listeners. This was a group endeavor so I also had to practice clear communication to help everyone be on the same page. 
